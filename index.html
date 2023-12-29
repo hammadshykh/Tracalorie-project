@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="section-header p-2">
+        <div></div>
+        <div class="header-logo">
+          <h2 class="text-white">Tracalorie</h2>
+        </div>
+        <div class="clear-button me-3">
+          <button type="button" class="btn btn-danger btn-cleared">
+            CLEAR ALL
+          </button>
+        </div>
+      </div>
+      <div class="clear-alert"></div>
+    </header>
+    <div class="section-tacalories">
+      <div class="container">
+        <form class="shadow my-2 p-3">
+          <div class="row">
+            <div class="col-6">
+              <p>Add Meal / Food item</p>
+              <div class="form-group">
+                <label for="Add meal / food">Add meal / food</label>
+                <input
+                  required
+                  type="text"
+                  placeholder="Add item"
+                  class="form-control"
+                  id="item-add"
+                />
+              </div>
+              <button
+                type="button"
+                class="btn bg-danger d-flex align-items-center text-white add-button clear-button my-4"
+                id="add-btn"
+              >
+                <span class="fa fa-plus me-2"></span>
+                ADD ITEM
+              </button>
+              <button class="btn upadate-btn d-none my-3" id="update-btn">
+                <span><i class="fa-solid fa-pen-to-square"></i></span>
+                UPDATE ITEM
+              </button>
+            </div>
+            <div class="col-6 mt-5 align-items-center">
+              <div class="form-group mb-2 mt-1">
+                <label for="Add Calories">Add Calories</label>
+                <input
+                  required
+                  type="number"
+                  placeholder="Add Calories"
+                  class="form-control"
+                  id="item-calories"
+                />
+              </div>
+              <div class="d-flex justify-content-end">
+                <button class="btn d-none back-btn" id="go-back">
+                  <span><i class="fa fa-arrow-left"></i></span>
+                  BACK
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="alert-area"></div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div>
+          <h2 class="text-center py-3">
+            <span>
+              <h2>Total Calories: <span id="plus-value">0</span></h2>
+            </span>
+          </h2>
+        </div>
+        <ul class="calories-list"></ul>
+      </div>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

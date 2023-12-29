@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  padding: 0;
+  align-items: center;
+}
+.calories-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  list-style: none;
+  border: 1px solid #e4e4e4;
+}
+.calories-list li p {
+  padding-top: 10px;
+  font-size: 16px;
+  color: black;
+}
+.calories-list li i {
+  transition: 0.5s;
+  color: rgb(255, 140, 0);
+  cursor: pointer;
+}
+.calories-list li i:hover {
+  color: gray;
+  font-size: 22px;
+}
+
+.section-header {
+  background-color: #b71c1c !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 2px 5px;
+}
+.section-tacalories p {
+  font-size: 25px;
+  color: #8e8e8e;
+}
+
+.clear-button {
+  display: flex;
+}
+
+.clear-button {
+  border: none;
+  border-radius: 0px;
+  font-size: 14px;
+  box-shadow: 1px 2px 5px black;
+}
+.back-btn {
+  border: none;
+  border-radius: 0px;
+  font-size: 14px;
+  box-shadow: 1px 2px 5px black;
+  background-color: #616161 !important;
+  color: white;
+}
+.back-btn span i {
+  background-color: white;
+  border-radius: 50%;
+  padding: 2px 3px;
+  color: #616161;
+  font-size: 15px;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.form-group label {
+  font-size: 12px;
+  color: #acacac;
+}
+.form-group:hover label {
+  color: skyblue;
+}
+.form-control {
+  border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid #8e8e8e;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-bottom: 2px solid green;
+}
+.alert-area {
+  box-shadow: 1px 3px 7px black;
+}
+
+.clear-alert {
+  text-align: center;
+  width: 200px;
+  position: absolute;
+  right: 0;
+  top: 80px;
+  right: 100px;
+}
+
+.upadate-btn {
+  border: none;
+  background-color: orange;
+  border-radius: 0px;
+  color: white;
+  box-shadow: 1px 1px 4px black;
+}
